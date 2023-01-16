@@ -104,7 +104,7 @@ export default function Home(props: IMockData) {
 }
 
 export const getStaticProps = async () => {
-  const filePath = path.join(process.cwd(), 'MockUserData.json')
+  const filePath = path.join(process.cwd(), 'MockData.json')
   const jsonData = await fsPromises.readFile(filePath)
   //@ts-ignore
   const objectData = JSON.parse(jsonData)
